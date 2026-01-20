@@ -1,0 +1,68 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif !important;
+    background-color: #ffffff !important;
+    direction: rtl;
+}
+
+/* دیزاینی کارتەکان بە شێوەی مۆدێرن */
+.card {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+    transition: 0.3s ease-in-out !important;
+    overflow: hidden;
+    background: #fff !important;
+}
+
+.card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* دیزاینی Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    padding: 15px 0 !important;
+}
+
+.navbar-brand {
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+    color: #fff !important;
+}
+
+/* دوگمەی بینین */
+.btn-primary {
+    background-color: #3498db !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 25px !important;
+}
+
+/* لاپەڕەی سەیڤکراوەکان (Horizontal Layout) */
+.saved-item {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+/* ئەڤە دێ ڕەنگێ ماڵپەری گوهۆڕیت دەما مۆد دهێتە گوهۆڕین */
+[data-theme="dark"] body {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .feature-card {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    border: 1px solid #333;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #000000 !important;
+}

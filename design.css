@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif !important;
+    background-color: #ffffff !important;
+    direction: rtl;
+    color: #333;
+}
+
+/* Navbar Style */
+.custom-nav {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav-link-custom {
+    color: white !important;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Card Style */
+.card {
+    border: none !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05) !important;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
+}
+
+.btn-main {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    border: none;
+}
+/* یەکسانکردنی قەبارەی هەموو کارتەکان */
+.card {
+    height: 100%; /* وادەکات هەموو کارتەکان هاوقەد بن */
+    display: flex;
+    flex-direction: column;
+}
+
+/* یەکسانکردنی قەبارەی وێنەکان */
+.card img {
+    height: 200px !important; /* بەرزی وێنە جێگیر دەکات */
+    object-fit: cover !important; /* وێنەکە ناتەقێنێت و بە جوانی دەیبڕێت */
+    width: 100% !important;
+}
+
+.card-body {
+    background: none !important; /* لابردنی ئەو ڕەنگە شینەی کە لە وێنەی ١دا دیارە */
+    background-color: transparent !important;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body h5 {
+    color: #333 !important; /* ڕەنگی ناوی شارەکان بکە بە ڕەش یان خۆڵەمێشی تۆخ */
+    margin-bottom: 10px;
+}
+
+/* ستایلی لاپەڕەی About کە لە وێنەی ٤دا شینە */
+.feature-card {
+    background-color: #1E3C72 !important;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+.card-body h5 {
+    color: #ffffff !important; /* سپیکردنی ناوی شارەکان */
+    margin-bottom: 10px;
+}
+
+/* ستایلی تایبەت بۆ لاپەڕەی About */
+.feature-card {
+    background-color: #1E3C72;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card h5 {
+    color: #333; /* ڕەنگێ ناڤێ باژێڕی */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    height: 200px !important;
+    object-fit: cover !important;
+}
+/* ستایلێ سندوقا گەڕیانێ د ناڤبارێ دا */
+.search-box input {
+    border-radius: 20px !important;
+    border: none !important;
+    padding: 5px 20px !important;
+    width: 300px !important; /* درێژیا سندوقێ */
+}
+
+.search-box button {
+    border-radius: 20px !important;
+    padding: 5px 20px !important;
+}
+
+/* بۆ ئەوەی لە مۆبایلدا تێک نەچێت */
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .search-box input {
+        width: 100% !important;
+    }
+}
+/* ئەڤە دێ ڕەنگێ ناڤبارێ ب هێز کەت */
+.navbar {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    background-color: #1e3c72 !important; /* ڕەنگەکێ پشتیڤان */
+    padding: 10px 0 !important;
+    min-height: 70px;
+}
+
+/* ڕەنگێ نڤیسینێن ناڤبارێ */
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+/* سندوقا گەڕیانێ */
+.search-box input {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #ddd !important;
+}
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* ڕەنگێ زەرد دەمێ ماوس دچیتە سەر */
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+
+
+/* بۆ ئەوەی کارتەکان لە مۆبایلدا یەک یەک دەرکەون */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100% !important;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.text-center {
+background-color: #1e3c72;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+padding: 15px;
+font-family: 'Vazirmatn', sans-serif !important;
+color: #ffffff;
+background-size: auto 100%;
+font-size: medium;
+
+
+}
+/* بۆ ئەوەی کاتێک کلیک دەکەی بە نەرمی بڕواتە خوارەوە */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-welcome {
+    /* ڤالاهیا د ناڤبەرا ناڤبەر و نڤیسینێ دا کێم بکە */
+    padding-top: 20px !important; /* لێرە ژمارێ کێم بکە دا بچیتە سەرتر */
+    padding-bottom: 40px; 
+    margin-top: 0 !important; /* دڵنیابە چ مارجنەک ل سەر نینە */
+    background-color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px; /* بەرزییا وێ کێم بکە ئەگەر دڤێت کورتتر بیت */
+    
+}
+
+.welcome-text {
+   font-size: medium;
+   
+   
+}
+.brand-name {
+    color: #f39c12;
+    font-size: medium;
+}
+
+.welcome-desc {
+    color: #f7f2f2;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    
+}
+
+/* ستایلی دوگمەکان */
+.btn-hero-primary {
+    background-color: #f39c12;
+    color: #000 !important;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-hero-outline {
+    background-color: transparent;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    padding: 8px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+}
+.title-container{
+background-color: #1e3c72;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+padding: 10px;
+font-family: 'Vazirmatn', sans-serif !important;
+color: #ffffff;
+background-size: auto 100%;
+font-size: medium;
+}
+.ads-section {
+    padding: 30px 0;
+    background-color: #ffffff; /* هەمان ڕەنگی ماڵپەڕەکەت */
+}
+
+.ads-wrapper {
+    background: linear-gradient(135deg, #25282e 0%, #141619 100%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border: 1px solid rgb(253, 253, 253);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.institute-name {
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.gold-text {
+    color: #f39c12;
+}
+
+.institute-desc {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* دیزاینا لۆگۆی */
+.ads-logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px dashed #f39c12;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 25px rgba(243, 156, 18, 0.2);
+}
+
+.war-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* دوگمەکان */
+.btn-call {
+    background: #f39c12;
+    color: #000 !important;
+    padding: 10px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn-more {
+    border: 1px solid #ffffff;
+    color: #fff !important;
+    padding: 10px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+.ads-label {
+    color: #ffffff;}
+.institute-desc {
+    color: #ffffff;}
+/* ستایلێ لیستەیا زمانان */
+.language-selector .dropdown-menu {
+    background-color: #25282e; /* هەمان ڕەنگێ کارتێن تە */
+    border: 1px solid rgba(243, 156, 18, 0.2);
+    border-radius: 10px;
+}
+
+.language-selector .dropdown-item {
+    color: white !important;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.language-selector .dropdown-item:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+    color: #f39c12 !important;
+}
+
+.flag-img {
+    width: 22px;
+    height: auto;
+    margin-left: 10px; /* ژبۆ نڤیسینا عەرەبی و کوردی */
+    border-radius: 2px;
+}
+
+/* ژبۆ ئینگلیزی margin بگوهۆڕە */
+[dir="rtl"] .flag-img {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+
+
+
+
+/* مۆبایل */
+@media (max-width: 768px) {
+    .ads-wrapper {
+        flex-direction: column-reverse; /* لۆگۆ دەکەوێتە سەرەوە لە مۆبایل */
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .ads-logo-area {
+        margin-bottom: 25px;
+    }
+    .institute-name { font-size: 1.8rem; }
+}
+/* ئەڤە دێ کادرێ شین لادەت و نڤیسینان سپی کەتەڤە وەک جاران */
+.card-body {
+    background: none !important;
+    background-color: transparent !important;
+    padding: 15px;
+    text-align: center;
+}
+
+.card h5 {
+    color: #000000 !important; /* ڕەنگێ نڤیسینێ بکە سپی */
+    background: none !important;
+    font-size: 10px;
+    
+}
+
+.feature-card {
+    background: #1e3c72; 
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+/* بۆ لادانا ڕەنگێ شین یێ زێدە */
+.card-body {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* بۆ ڕێکخستنا کارتێن پەیجێ About */
+.feature-card {
+    background-color: #1e3c72 !important;
+    border-radius: 15px;
+    padding: 25px;
+    color: white !important;
+    margin-bottom: 20px;
+}
+/* ئەڤە دێ نڤیسینێ نەچار کەت ببیتە سپی دەمێ دارک مۆد چالاک بیت */
+[data-theme="dark"] body, 
+[data-theme="dark"] div, 
+[data-theme="dark"] p, 
+[data-theme="dark"] span, 
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3 {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] body {
+    background-color: #121212 !important;
+}
+
